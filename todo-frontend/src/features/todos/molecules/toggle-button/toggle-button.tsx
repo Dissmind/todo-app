@@ -11,9 +11,9 @@ const StyledInput = styled.input.attrs((props) => ({
     width: 30px;
     height: 30px;
     
-    border-color: #ccc;
-    background-color: white;
-    color: black;
+    border-color: ${({ checked }) => (checked ? '#006cff' : 'black')};
+    background-color: ${({ checked }) => (checked ? '#006cff' : 'white')};
+    color: white;
     
     box-sizing: border-box;
     display: flex;
@@ -36,18 +36,16 @@ const StyledInput = styled.input.attrs((props) => ({
 
 
 interface IToggleButtonProps {
-  onHandler: () => void,
   checked: boolean
 }
 
 
-export const ToggleButton = ({onHandler, checked}: IToggleButtonProps) => {
+export const ToggleButton = ({checked}: IToggleButtonProps) => {
 
   return (
     <StyledInput
       type={'checkbox'}
       checked={checked}
-      onChange={onHandler}
     />
   )
 }
