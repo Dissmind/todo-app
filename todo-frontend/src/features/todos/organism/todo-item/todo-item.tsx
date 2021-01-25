@@ -14,6 +14,7 @@ const TodoItemStl = styled.div`
   display: flex;
   width: 100%;
   padding-bottom: 5px;
+  padding-top: 20px;
   border-bottom: solid #ccc .5px;
 `
 
@@ -24,7 +25,6 @@ const TitleStl = styled.div<{toggleStatus: boolean}>`
   padding: 3px;
   padding-left: 20px;
   width: 90%;
-  
 `
 
 
