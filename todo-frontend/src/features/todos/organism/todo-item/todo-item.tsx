@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {ToggleButton} from "../../molecules/toggle-button/toggle-button";
-import {DeleteButton} from "../../molecules/delete-button/delete-button";
+import {DeleteButton} from "../../atoms/delete-button/delete-button";
 
 interface ITodoItemProps {
   toggleStatus: boolean,
